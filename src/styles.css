@@ -4,6 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
+
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -12,6 +13,38 @@ body {
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+}
+
+/* scroll behavior smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+/* add a slide In Left animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* animate the scroll down arrow in your Home component to bounce up and down on your page. */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 div#main {
